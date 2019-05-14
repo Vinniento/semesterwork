@@ -23,7 +23,7 @@ function randcode($n)
 }
 
 $name = $_POST['groupname'];
-$id_students =randcode(5); //$_POST['id_students'];
+$id_students =rand(0,50); //$_POST['id_students'];
 
 
 try {

@@ -142,12 +142,7 @@ include "header.php";
                     </label>
                 </p>
 
-                <p>
-                    <label>
-                        <input type="checkbox" class="filled-in" />
-                        <span>Vorname, Nachname</span>
-                    </label>
-                </p>
+                
                 <p><button class="btn waves-effect waves-light" type="submit" value="Submit" onclick="formSend()">Submit</button>
                 </p>
             </form>
