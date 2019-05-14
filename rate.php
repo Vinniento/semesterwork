@@ -33,13 +33,11 @@ if (isset($_POST['rating_code'])) {
     $statement->bindParam(':rating_code', $rating_code);
     $statement->execute();
     $code = $statement->fetch(PDO::FETCH_ASSOC);
-    print_r($code);
+    //print_r($code);
 
-    if ($code['rating_code'] == $_POST['rating_code']) {
-      echo "right code";
-    } else {
+    if (!($code['rating_code'] == $_POST['rating_code'])) {
       header("Location: index.php");
-    }
+    } 
   } catch (PDOException $error) {
     echo $error;
   }

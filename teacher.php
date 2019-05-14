@@ -91,7 +91,7 @@ include "header.php";
 
 <br>
 <div class="container grey lighten-3" style="height: 8em;">
-<br>
+    <br>
     <form action="teacher.php" method="post">
         <div class="row"><br>
             <div class="col s12 m3 l3">
@@ -104,7 +104,7 @@ include "header.php";
             </div>
             <div class="col s12 m3 l3">
                 <button class="btn waves-effect waves-light" type="button" name="rate_groups" value="Rate Groups" onclick="showRateGroups()">Rate Groups</button>
-            <br><br>
+                <br><br>
             </div>
             <div class="col s12 m3 l3">
                 <button class="btn waves-effect waves-light" type="button" name="view_ratings" value="View Ratings" onclick="showViewRatings()">View Ratings</button>
@@ -135,43 +135,43 @@ include "header.php";
     <div class="row">
         <div class="col s12 m6 l6 offset-m3 offset-l3">
             <form action="create_check.php" method="post">
-            <p>
-                <label>
-                    <span>Groupname:</span>
-                    <input type="text" name="groupname" required>
-                </label>
-            </p>
+                <p>
+                    <label>
+                        <span>Groupname:</span>
+                        <input type="text" name="groupname" required>
+                    </label>
+                </p>
 
-            <p>
-                <label>
-                    <input type="checkbox" class="filled-in" />
-                    <span>Vorname, Nachname</span>
-                </label>
-            </p>
-            <p><button class="btn waves-effect waves-light" type="submit" value="Submit" onclick="formSend()">Submit</button>
-            </p>
-        </form>
+                <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>Vorname, Nachname</span>
+                    </label>
+                </p>
+                <p><button class="btn waves-effect waves-light" type="submit" value="Submit" onclick="formSend()">Submit</button>
+                </p>
+            </form>
         </div>
     </div>
 </div>
 
 <div class="container blue" id="rate_groups" style="display:none;">
 
-<?php
+    <?php
 
-include "show_groups.php";
+    include "show_groups.php";
 
-?>
+    ?>
 
 </div>
 
 <div class="container" id="view_ratings" style="display:none;">
 
-<?php
+    <?php
 
-include "rating.php";
+    include "rating.php";
 
-?>
+    ?>
 
 </div>
 </div>

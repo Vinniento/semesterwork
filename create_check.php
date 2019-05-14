@@ -14,7 +14,7 @@ function randcode($n)
     $chars = '0123456789abcdefghijklmnopqrstuvwxyz';
     $randomString = '';
 
-    for ($i = 0; $i < $n; $i++) {
+    for ($i = 1; $i < $n; $i++) {
         $j = rand(0, strlen($chars) - 1);
         $randomString .= $chars[$j];
     }
@@ -23,7 +23,7 @@ function randcode($n)
 }
 
 $name = $_POST['groupname'];
-$id_students =randcode(20); //$_POST['id_students'];
+$id_students =randcode(5); //$_POST['id_students'];
 
 
 try {
@@ -36,7 +36,7 @@ try {
     $create = "CREATE TABLE IF NOT EXISTS `webtech`.`presentations` 
     ( `id` INT(30) NOT NULL AUTO_INCREMENT , 
     `name` VARCHAR(50) NOT NULL UNIQUE  , 
-	`id_students` int NOT NULL UNIQUE  ,
+	`id_students`   int NOT NULL UNIQUE  ,
     `rating_code` VARCHAR(50) NOT NULL UNIQUE, 
     `creator` VARCHAR(50) NOT NULL ,
     PRIMARY KEY (`id`)) ENGINE = InnoDB";
