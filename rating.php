@@ -199,9 +199,13 @@ catch (PDOException $exception)
 
 $content_structure = ($introduction+$overview+$structure+$content+$conclusion)/5;
 $teamwork = ($work_as_team+$preperation_team+$necessity_participate)/3;
+$language = ($articulation+$talking_speed+$pronounciation+$competence)/4;
+$body_language = ($presence+$eye_contact+$posture+$gesture)/4;
 
 $content_structureT = ($introductionT+$overviewT+$structureT+$contentT+$conclusionT)/5;
 $teamworkT = ($work_as_teamT+$preperation_teamT+$necessity_participateT)/3;
+$languageT = ($articulationT+$talking_speedT+$pronounciationT+$competenceT)/4;
+$body_languageT = ($presenceT+$eye_contactT+$postureT+$gestureT)/4;
 ?>
 
 
@@ -300,16 +304,99 @@ $teamworkT = ($work_as_teamT+$preperation_teamT+$necessity_participateT)/3;
                    <h5><p><span class="w3-badge w3-large w3-black" id="participation"><?php echo round($necessity_participate,1); ?></span></p></h5>
                     </div>
                 </div>
-            <!--</div>-->
-
-
-
-
-
-
-
-
+                <h3 class="center">Individual Feedback</h3><br>
+                <div class="row no-margin-bottom indigo lighten-3">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center"><b>Language</b></p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                    <h5><p><span class="w3-badge w3-xlarge w3-black w3-padding" id="language"><?php echo round($language,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Articulation</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="articulation"><?php echo round($articulation,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Talking Speed</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="talking_speed"><?php echo round($talking_speed,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Pronunciation</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="pronunciation"><?php echo round($pronounciation,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Competence</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="competence"><?php echo round($competence,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom indigo lighten-3">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center"><b>Body Language</b></p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                    <h5><p><span class="w3-badge w3-xlarge w3-black w3-padding" id="body_language"><?php echo round($body_language,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Presence</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="presence"><?php echo round($presence,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Eye Contact</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="eye_contact"><?php echo round($eye_contact,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Posture</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="posture"><?php echo round($posture,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Gesture</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="gesture"><?php echo round($gesture,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom indigo lighten-3">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center"><b>Preparation</b></p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                    <h5><p><span class="w3-badge w3-xlarge w3-black w3-padding" id="preparation_individual"><?php echo round($preperation_individual,1); ?></span></p></h5>
+                    </div>
+                </div>
         </div>
+
+
+
         <div class="col s6 m6 l6 blue">
         <h3 class="center">Teacher</h3><br>
         <div class="row no-margin-bottom indigo lighten-3">
@@ -400,7 +487,97 @@ $teamworkT = ($work_as_teamT+$preperation_teamT+$necessity_participateT)/3;
                    <h5><p><span class="w3-badge w3-large w3-black" id="participation"><?php echo round($necessity_participateT,1); ?></span></p></h5>
                     </div>
                 </div>
+                <h3 class="center">Individual Feedback</h3><br>
+                <div class="row no-margin-bottom indigo lighten-3">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center"><b>Language</b></p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                    <h5><p><span class="w3-badge w3-xlarge w3-black w3-padding" id="language"><?php echo round($languageT,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Articulation</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="articulation"><?php echo round($articulationT,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Talking Speed</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="talking_speed"><?php echo round($talking_speedT,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Pronunciation</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="pronunciation"><?php echo round($pronounciationT,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Competence</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="competence"><?php echo round($competenceT,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom indigo lighten-3">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center"><b>Body Language</b></p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                    <h5><p><span class="w3-badge w3-xlarge w3-black w3-padding" id="body_language"><?php echo round($body_languageT,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Presence</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="presence"><?php echo round($presenceT,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Eye Contact</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="eye_contact"><?php echo round($eye_contactT,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Posture</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="posture"><?php echo round($postureT,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center">Gesture</p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                   <h5><p><span class="w3-badge w3-large w3-black" id="gesture"><?php echo round($gestureT,1); ?></span></p></h5>
+                    </div>
+                </div>
+                <div class="row no-margin-bottom indigo lighten-3">
+                    <div class="col s12 m6 l6">
+                    <h5><p class="center"><b>Preparation</b></p></h5>
+                    </div>
+                    <div class="col s12 m6 l6 center-align">
+                    <h5><p><span class="w3-badge w3-xlarge w3-black w3-padding" id="preparation_individual"><?php echo round($preperation_individualT,1); ?></span></p></h5>
+                    </div>
+                </div>
     </div>
+
 <!--</div>-->
 
 
