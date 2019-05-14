@@ -211,11 +211,11 @@ $body_languageT = ($presenceT+$eye_contactT+$postureT+$gestureT)/4;
 
 
 
-<!--<div class="container">-->
+
     <div class="row">
         <div class="col s6 m6 l6 indigo lighten-4">
-            <!--<div class="container">-->
-            <h3 class="center">Students</h3><br>
+            
+            <h4 class="center">Students</h4><br>
                 <div class="row no-margin-bottom indigo lighten-3">
                     <div class="col s12 m6 l6">
                     <h5><p class="center"><b>Content & Structure</b></p></h5>
@@ -304,7 +304,7 @@ $body_languageT = ($presenceT+$eye_contactT+$postureT+$gestureT)/4;
                    <h5><p><span class="w3-badge w3-large w3-black" id="participation"><?php echo round($necessity_participate,1); ?></span></p></h5>
                     </div>
                 </div>
-                <h3 class="center">Individual Feedback</h3><br>
+                <h4 class="center">Vincent Schauer</h4><br>
                 <div class="row no-margin-bottom indigo lighten-3">
                     <div class="col s12 m6 l6">
                     <h5><p class="center"><b>Language</b></p></h5>
@@ -398,7 +398,7 @@ $body_languageT = ($presenceT+$eye_contactT+$postureT+$gestureT)/4;
 
 
         <div class="col s6 m6 l6 blue">
-        <h3 class="center">Teacher</h3><br>
+        <h4 class="center">Teacher</h4><br>
         <div class="row no-margin-bottom indigo lighten-3">
                     <div class="col s12 m6 l6">
                     <h5><p class="center"><b>Content & Structure</b></p></h5>
@@ -487,7 +487,7 @@ $body_languageT = ($presenceT+$eye_contactT+$postureT+$gestureT)/4;
                    <h5><p><span class="w3-badge w3-large w3-black" id="participation"><?php echo round($necessity_participateT,1); ?></span></p></h5>
                     </div>
                 </div>
-                <h3 class="center">Individual Feedback</h3><br>
+                <h4 class="center">Vincent Schauer</h4><br>
                 <div class="row no-margin-bottom indigo lighten-3">
                     <div class="col s12 m6 l6">
                     <h5><p class="center"><b>Language</b></p></h5>

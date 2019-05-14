@@ -90,23 +90,23 @@ include "header.php";
 </script>
 
 <br>
-<div class="container grey lighten-3" style="height: 8em;">
+<div class="container grey lighten-3">
     <br>
     <form action="teacher.php" method="post">
         <div class="row"><br>
-            <div class="col s12 m3 l3">
+            <div class="col s12 m3 l3 center-align">
                 <button class="btn waves-effect waves-light" type="button" name="add_students" value="Add Students" onclick="showAddStudents()">Add Students</button>
                 <br><br>
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s12 m3 l3 center-align">
                 <button class="btn waves-effect waves-light" type="button" name="create_groups" value="Create Groups" onclick="createTableFromJSON()">Create Groups</button>
                 <br><br>
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s12 m3 l3 center-align">
                 <button class="btn waves-effect waves-light" type="button" name="rate_groups" value="Rate Groups" onclick="showRateGroups()">Rate Groups</button>
                 <br><br>
             </div>
-            <div class="col s12 m3 l3">
+            <div class="col s12 m3 l3 center-align">
                 <button class="btn waves-effect waves-light" type="button" name="view_ratings" value="View Ratings" onclick="showViewRatings()">View Ratings</button>
             </div>
         </div>
