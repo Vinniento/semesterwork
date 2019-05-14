@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Map</title>
+<body>
+<meta charset="UTF-8">
+
+<style>
+    #map {
+        height: 40em;
+        width: 60em;
+    }
+
+    html, body {
+        height: 40em;
+        width: 60em;
+        margin: 0;
+        padding: 0;
+        alignment: center;
+    }
+</style>
+
+<div id="map"></div>
+<script>
+    var map;
+    var fh = [
+        {"fh":"Location of our development","coords":[48.158116, 16.382152]}
+    ];
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 6,
+            center: new google.maps.LatLng(50, 15),
+            mapTypeId: 'roadmap'
+        });
+
+        mashFh(fh);
+    }
+
+    function mashFh(results) {
+        for (var i = 0; i < results.length; i++) {
+            var coords = results[i].coords;
+            var latLng = new google.maps.LatLng(coords[0], coords[1]);
+            var marker = new google.maps.Marker({
+                position: latLng,
+                map: map,
+                label:results[i].fh
+            });
+        }
+    }
+
+
+
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTM5RKrtCLpZAj5HU3K3cTvFNB240NsBg&callback=initMap">
+</script>
+</body>
+</html>
